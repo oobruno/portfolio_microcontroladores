@@ -7,12 +7,12 @@
 #define F_CPU 16000000
 #include "util/delay.h"
 #include <xc.h>
-/* Piscar um led ligado ao pino PC2 enquanto a chave ligada 
+/* @brief Piscar um led ligado ao pino PC2 enquanto a chave ligada 
  *ao pino PD3 estiver pressionada
  */
-int main(void){
-	DDRC |= (1<<DDC2); // configurar o pino PC2 como saída, colocando | nao zera os outros se por acaso tiverem acionados.
-	DDRD &= (1<<DDD3);//configurar pino PD3 como entrada, usando & para zerar o pino(zerar = 0) pára transformar em entrada.
+ void Atividade(){
+	DDRC |= (1<<DDC2); // configurar o pino PC2 como saï¿½da, colocando | nao zera os outros se por acaso tiverem acionados.
+	DDRD &= (1<<DDD3);//configurar pino PD3 como entrada, usando & para zerar o pino(zerar = 0) pï¿½ra transformar em entrada.
 	
     while(1)
     { /*ler o valor da
@@ -28,4 +28,7 @@ int main(void){
 				PORTC &= ~(1<<PORTC2); //APAGA LED
 			}
 		}
+ }
+int main(void){
+	Atividade();
 }
