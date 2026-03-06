@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Atmel Studio Solution File, Format Version 11.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "aula", "aula\aula.cproj", "{2285C48D-296E-43FD-A7B6-69885F64CFFD}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "aula1_27_02", "aula\aula1_27_02.cproj", "{2285C48D-296E-43FD-A7B6-69885F64CFFD}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "aula2GPIO_06_03", "aula2GPIO_06_03\aula2GPIO_06_03.cproj", "{21DA3DF8-FE17-4607-A95F-A74172419C30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Debug|AVR.Build.0 = Debug|AVR
 		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Release|AVR.ActiveCfg = Release|AVR
 		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Release|AVR.Build.0 = Release|AVR
+		{21DA3DF8-FE17-4607-A95F-A74172419C30}.Debug|AVR.ActiveCfg = Debug|AVR
+		{21DA3DF8-FE17-4607-A95F-A74172419C30}.Debug|AVR.Build.0 = Debug|AVR
+		{21DA3DF8-FE17-4607-A95F-A74172419C30}.Release|AVR.ActiveCfg = Release|AVR
+		{21DA3DF8-FE17-4607-A95F-A74172419C30}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
