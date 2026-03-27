@@ -18,7 +18,8 @@ int main(void){
 			| (0<<USBS0) // 1 BIT DE STOP
 			| (1<<UCSZ01)|(1<<UCSZ00); //FRAMES DE 8 BITS
 			
-    while(1){
+    while(1)
+	{
 		    UDR0 = 0X5A;
 			_delay_ms (10);
     }
