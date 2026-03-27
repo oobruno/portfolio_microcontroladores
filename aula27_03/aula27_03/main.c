@@ -9,6 +9,8 @@
 #include <xc.h>
 #include "util/delay.h"
 
+uint8_t gMessage[4] = {200,100,50,94}; //ultimo byte é checksum
+
 int main(void){
 	UBRR0 = 103; //TAXA DE baud rate 9600
 	UCSR0A = (0<<U2X0); //
@@ -20,7 +22,11 @@ int main(void){
 			
     while(1)
 	{
-		    UDR0 = 0X5A;
+		int i;
+		for(i=0;i<4;i++){	
+		    UDR0 = gMessage[i];
+			_delay_ms(2);
+		}
 			_delay_ms (10);
     }
 }
